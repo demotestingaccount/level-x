@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-22T15:18:59.241Z",
+    "end": "2020-12-22T15:19:03.131Z",
+    "duration": 3855,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea347b81-a5d2-4cb9-b38b-0d12df26872b",
+      "title": "",
+      "fullFile": "cypress/integration/react-level1.spec.js",
+      "file": "cypress/integration/react-level1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ea47eaad-9f51-444c-a841-80695d4e5470",
+          "title": "React Level-1 challenge",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Shows input elements",
+              "fullTitle": "React Level-1 challenge Shows input elements",
+              "timedOut": null,
+              "duration": 632,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"firstNumber\"]').should('have.value', '');\ncy.get('input[name=\"secondNumber\"]').should('have.value', '');\ncy.get('input[name=\"mathOperator\"]').should('have.value', '');\ncy.get('button[name=\"btnMathOperator\"]').should('exist');\ncy.get('div[id=\"result\"]').should('exist');",
+              "err": {},
+              "uuid": "cff096a4-b7b4-43f5-8520-89e1e64645d2",
+              "parentUUID": "ea47eaad-9f51-444c-a841-80695d4e5470",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Addition math operation works:",
+              "fullTitle": "React Level-1 challenge Addition math operation works:",
+              "timedOut": null,
+              "duration": 698,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"firstNumber\"]').type(10);\ncy.get('input[name=\"secondNumber\"]').type(2); // check, if addition works\ncy.get('input[name=\"mathOperator\"]').type('+');\ncy.get('button[name=\"btnMathOperator\"]').click();\ncy.get('div[id=\"result\"]').should('contain', 12);",
+              "err": {},
+              "uuid": "a2a0592b-2007-4e90-9e56-4d296c1e5c04",
+              "parentUUID": "ea47eaad-9f51-444c-a841-80695d4e5470",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Subtraction math operation works:",
+              "fullTitle": "React Level-1 challenge Subtraction math operation works:",
+              "timedOut": null,
+              "duration": 647,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"firstNumber\"]').type(10);\ncy.get('input[name=\"secondNumber\"]').type(2);\ncy.get('input[name=\"mathOperator\"]').type('-');\ncy.get('button[name=\"btnMathOperator\"]').click();\ncy.get('div[id=\"result\"]').should('contain', 8);",
+              "err": {},
+              "uuid": "30474f66-a16c-41f1-9ffb-661fe1e18d16",
+              "parentUUID": "ea47eaad-9f51-444c-a841-80695d4e5470",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Multiplication math operation works:",
+              "fullTitle": "React Level-1 challenge Multiplication math operation works:",
+              "timedOut": null,
+              "duration": 622,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"firstNumber\"]').type(10);\ncy.get('input[name=\"secondNumber\"]').type(2);\ncy.get('input[name=\"mathOperator\"]').type('*');\ncy.get('button[name=\"btnMathOperator\"]').click();\ncy.get('div[id=\"result\"]').should('contain', 20);",
+              "err": {},
+              "uuid": "0ff4bb4b-ffaa-472f-97cc-79abc531ab3d",
+              "parentUUID": "ea47eaad-9f51-444c-a841-80695d4e5470",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Division math operation works:",
+              "fullTitle": "React Level-1 challenge Division math operation works:",
+              "timedOut": null,
+              "duration": 633,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"firstNumber\"]').type(10);\ncy.get('input[name=\"secondNumber\"]').type(2);\ncy.get('input[name=\"mathOperator\"]').type('/');\ncy.get('button[name=\"btnMathOperator\"]').click();\ncy.get('div[id=\"result\"]').should('contain', 5);",
+              "err": {},
+              "uuid": "29db15ee-a15b-45ce-a557-2372816cd0ba",
+              "parentUUID": "ea47eaad-9f51-444c-a841-80695d4e5470",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Reminder math operation works:",
+              "fullTitle": "React Level-1 challenge Reminder math operation works:",
+              "timedOut": null,
+              "duration": 623,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"firstNumber\"]').type(11);\ncy.get('input[name=\"secondNumber\"]').type(3);\ncy.get('input[name=\"mathOperator\"]').type('%');\ncy.get('button[name=\"btnMathOperator\"]').click();\ncy.get('div[id=\"result\"]').should('contain', 2);",
+              "err": {},
+              "uuid": "a540e4d3-af43-45a9-9f51-275fb379844c",
+              "parentUUID": "ea47eaad-9f51-444c-a841-80695d4e5470",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cff096a4-b7b4-43f5-8520-89e1e64645d2",
+            "a2a0592b-2007-4e90-9e56-4d296c1e5c04",
+            "30474f66-a16c-41f1-9ffb-661fe1e18d16",
+            "0ff4bb4b-ffaa-472f-97cc-79abc531ab3d",
+            "29db15ee-a15b-45ce-a557-2372816cd0ba",
+            "a540e4d3-af43-45a9-9f51-275fb379844c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3855,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

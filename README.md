@@ -83,14 +83,14 @@ Fork this repository:
 
 ##### HTML-CSS-JS
 
-level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-html-level-1/raw/html_level1.json)
+level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/demotestingaccount/854f759d3bbed0357e6724d1a5321961/raw/html_level1.json)
 
 ##### React:
 
-level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-react-level-1/raw/react_level1.json)
+level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/demotestingaccount/1bab7bd55c02449b09125cf3ea6e50a9/raw/react_level1.json)
 
 ##### DHIS2:
 
-Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-1/raw/dhis2_level1.json)
+Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/demotestingaccount/c95df656346cf6948520fb2bc2dea75c/raw/dhis2_level1.json)
 
-level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-2/raw/dhis2_level2.json)
+level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/demotestingaccount/0dae95402ff7e853bbda92a61ff8d1bf/raw/dhis2_level2.json)

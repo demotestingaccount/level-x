@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-22T15:08:08.427Z",
+    "end": "2020-12-22T15:08:10.029Z",
+    "duration": 1602,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bca58154-8997-4efa-8925-720c20cbc50c",
+      "title": "",
+      "fullFile": "cypress/integration/html-css-js.spec.js",
+      "file": "cypress/integration/html-css-js.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "738a3f11-760f-4fb9-beb4-605ec633553e",
+          "title": "HTML Level-1 challenge",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Shows input elements",
+              "fullTitle": "HTML Level-1 challenge Shows input elements",
+              "timedOut": null,
+              "duration": 162,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"username\"]').should('have.value', '');\ncy.get('input[name=\"firstname\"]').should('have.value', '');\ncy.get('input[name=\"email\"]').should('have.value', '');\ncy.get('input[name=\"passwordInput\"]').should('have.value', '');\ncy.get('input[name=\"passwordInput\"]').should('have.value', '');\ncy.get('button[id=\"submitButton\"]').should('exist');",
+              "err": {},
+              "uuid": "eedb2ea8-15fb-47d6-9ea2-2c6942b44d88",
+              "parentUUID": "738a3f11-760f-4fb9-beb4-605ec633553e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alert message:",
+              "fullTitle": "HTML Level-1 challenge Alert message:",
+              "timedOut": null,
+              "duration": 1322,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var firstName = 'Traour';\ncy.get('input[name=\"username\"]').type('John');\ncy.get('input[name=\"firstname\"]').type(firstName);\ncy.get('input[name=\"email\"]').type('jtraour@gmail.com');\ncy.get('input[name=\"passwordInput\"]').type('Traour');\ncy.get('input[name=\"passwordInput-repeat\"]').type('Traour');\ncy.get('button[id=\"submitButton\"]').click();\ncy.on('window:alert', function (str) {\n  console.log(str);\n  expect(str).to.contains(\"Thank you \" + firstName + \" for registering!\");\n});",
+              "err": {},
+              "uuid": "4ce0e9ce-e4a4-41ef-a8e2-e38b1174f03f",
+              "parentUUID": "738a3f11-760f-4fb9-beb4-605ec633553e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eedb2ea8-15fb-47d6-9ea2-2c6942b44d88",
+            "4ce0e9ce-e4a4-41ef-a8e2-e38b1174f03f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1484,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
